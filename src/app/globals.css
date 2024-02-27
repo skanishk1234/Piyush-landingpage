@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background-color: #1E1E1E;
+  --foreground-color-light: #FFFFFF;
+  --foreground-color-dark: #FFFFFF;
+}
+
+body {
+  color: var(--foreground-color-light);
+  background-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--foreground-color-dark);
+  }
+}
+
+.swiper-slide {
+  width: auto;
+  height: auto;
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none !important;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: none !important;
+}
+
+.h1 {
+  @apply text-6xl font-extrabold;
+}
+
+.h2 {
+  @apply text-5xl font-extrabold;
+}
+
+.h3 {
+  @apply text-4xl font-extrabold;
+}
+
+.h4 {
+  @apply text-3xl font-extrabold;
+}
+
+@screen md {
+  .h1 {
+      @apply text-7xl;
+  }
+
+  .h2 {
+      @apply text-6xl;
+  }
+}
+
+/* Buttons */
+.btn,
+.btn-sm {
+  @apply font-medium rounded-full inline-flex items-center justify-center border border-transparent leading-snug transition duration-150 ease-in-out;
+}
+
+.btn {
+  @apply px-6 py-3;
+}
+
+.btn-sm {
+  @apply px-4 py-2;
+}
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
