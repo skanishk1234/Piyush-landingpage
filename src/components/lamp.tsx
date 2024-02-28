@@ -14,21 +14,21 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="py-4 mt-8 text-4xl font-bold tracking-tight text-center text-transparent bg-gradient-to-br from-white to-white/60 bg-clip-text md:text-7xl"
+        className="py-4 mt-8 text-4xl font-bold text-center text-transparent bg-gradient-to-br from-white to-white/60 bg-clip-text md:text-7xl"
       >
-        $TUPA Token Address
+        $TUPA Token Addresses
         <img
           src="/images/logos/turtle-papa-coin.svg"
           alt="turtle-papa-coin"
           width={2432}
           height={1442}
-          className="w-auto mx-auto mt-4 h-72"
+          className="w-full mx-auto mt-4 h-64"
         />
-        <span className="text-lg tracking-normal flex flex-col space-y-4">
-          SOL: TBC <br />
-          BNB: TBC (Available on April 2024) <br />
-          ETH: TBC (Available on May 2024)
-        </span>
+        <p className="text-sm sm:text-xl font-medium rounded-xl border-l-2 border-white/80 cursor-pointer bg-white/10 hover:bg-gradient-to-tr from-green-500 via-green-600 to-green-800 px-6 py-4 transition-all duration-75 ease-in-out hover:scale-105 hover:text-white flex flex-col space-y-2">
+          <p>SOL: <br className="sm:hidden" />xy1NogYK53gCsaDxCmsHe44<br className="sm:hidden" />cgrytZvKbGGqn7yaX25X <br /></p>
+          <p>BNB: TBC (Available on April 2024) <br /></p>
+          <p>ETH: TBC (Available on May 2024)</p>
+        </p>
       </motion.h1>
     </LampContainer>
   );
@@ -44,7 +44,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#1E1E1E] w-full z-0",
+        "relative flex min-h-screen pt-24 flex-col items-center justify-center overflow-hidden bg-[#1E1E1E] w-full z-0",
         className
       )}
     >

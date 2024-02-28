@@ -12,6 +12,7 @@ const navigation = [
   { name: "Features", href: "#features" },
   { name: "Tokenomics", href: "#tokenomics" },
   { name: "Roadmap", href: "#roadmap" },
+  { name: "Documentation", href: "https://docs.turtlepapa.com/docs/introduction" },
 ];
 
 export default function Header() {
@@ -129,7 +130,7 @@ export default function Header() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-medium leading-6 text-white"
+              className="text-sm font-medium hover:text-green-600 leading-6 text-white/80"
             >
               {item.name}
             </a>

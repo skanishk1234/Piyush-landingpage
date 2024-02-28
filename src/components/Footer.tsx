@@ -150,19 +150,20 @@ export default function Footer() {
           <p className="text-sm leading-5 text-gray-400">
             Disclaimer: $TUPA Token is a meme coin made for entertainment purposes. We make no promises about future value, so be responsible. Crypto may be unregulated in your jurisdiction. Profits may be subject to taxes. Always do your own research before aping.
             </p>
-            <div className="flex space-x-4 items-center justify-center">
-            <Link className="text-sm leading-5 text-gray-200" href={"/privacy-policy"} >Privacy policy</Link>
-              <Link className="text-sm leading-5 text-gray-200" href={"/cookie-policy"} >Cookie policy</Link>
+            <div className="flex space-x-4 items-center justify-center md:items-start md:justify-start">
+            <Link className="text-sm leading-5 hover:text-green-600 text-gray-200" href={"/privacy-policy"} >Privacy policy</Link>
+              <Link className="text-sm leading-5 hover:text-green-600 text-gray-200" href={"/cookie-policy"} >Cookie policy</Link>
               </div>
           </div>
-          <img className="h-12" src="/logo.svg" alt="Turtle Papa" />
+          <a href="#"><img className="h-20" src="/logo.svg" alt="Turtle Papa" /></a>
+          
 
           <div className="flex flex-col items-left justify-center space-y-3">
           <p className="text-sm leading-5 text-gray-400">
             40A Turtle Papa Street, New Turtle City, Turtle Land, 9876, United
             States of Turtle
           </p>
-          <a href="mailto:contact@turtlepapa.com" className="text-sm text-left leading-5 text-gray-400">
+          <a href="mailto:contact@turtlepapa.com" className="text-sm text-left leading-5 hover:text-green-600 text-gray-400">
             contact@turtlepapa.com
             </a>
             

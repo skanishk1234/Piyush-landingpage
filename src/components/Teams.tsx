@@ -56,11 +56,11 @@ team is committed to delivering transparency, sustainability, and value to our u
         </div>
             <ul
               role="list"
-              className="grid max-w-2xl grid-cols-1 mx-auto mt-20 text-center gap-x-6 gap-y-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:mx-0 lg:max-w-none"
+              className="grid max-w-2xl grid-cols-1 mx-auto mt-20 text-center gap-x-6 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:mx-0 lg:max-w-none"
             >
               {people.map((person) => (
                 <li key={person.name}>
-                  <div className="hover:bg-green-500 h-[22rem] bg-gradient-to-br from-white/5 to-[#1C1C1C] border-[#252525] border-4 p-5 rounded-xl border-l-8 border-cta cursor-pointer hover:scale-105 transition-all ease-in-out duration-150">
+                  <div className="hover:bg-green-500 h-[22rem] bg-gradient-to-br from-white/5 to-[#1C1C1C] border-[#252525] border-4 p-5 rounded-xl border-cta cursor-pointer hover:scale-105 transition-all ease-in-out duration-150">
                   <img className="w-48 h-48 mx-auto rounded-full" src={person.imageUrl} alt={person.name} />
                   <h3 className="mt-6 text-lg font-semibold leading-7 tracking-tight text-white uppercase">{person.name}</h3>
                   <p className="text-sm leading-6 text-gray-300">{person.role}</p>

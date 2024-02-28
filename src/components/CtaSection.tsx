@@ -40,8 +40,8 @@ const navigation = {
       href: "https://t.me/TurtlePapaOfficialChat",
       icon: (props: any) => (
         <svg
-        width={48}
-        height={48}
+          width={48}
+          height={48}
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +72,8 @@ const navigation = {
       href: "https://twitter.com/TurtlePapa_",
       icon: (props: any) => (
         <svg
-        width={48}
-        height={48}
+          width={48}
+          height={48}
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -126,14 +126,16 @@ export default function CtaSection() {
     <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#171717] to-[#1E1E1E]">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-[#282828] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+          <div className="mx-auto max-w-md sm:text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Join us on a journey of the World&apos;s Best Community Driven Coin.
+              Join us on a journey of the World&apos;s Best Community Driven
+              Coin.
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            A singular multi-chain meme coin poised to dominate the crypto landscape, obliterating all opposition in its path.
+              A singular multi-chain meme coin poised to dominate the crypto
+              landscape, obliterating all opposition in its path.
             </p>
-            <div className="flex items-center justify-center gap-x-6 lg:justify-start">
+            <div className="flex items-center gap-x-6 justify-start sm:justify-center lg:justify-start">
               {/* <div>
                 <label
                   htmlFor="search"
@@ -157,37 +159,33 @@ export default function CtaSection() {
               </div> */}
 
               <div className="flex flex-col space-y-6 justify-between">
-              <a
-                href="#"
-                className="text-sm mt-4 text-center font-medium leading-6 px-6 py-3 rounded-full bg-gradient-to-r from-green-800 via-green-500 to-green-800 hover:from-green-900 hover:via-green-600 hover:to-green-900 text-white"
-              >
-                Let&apos;s Connect
-              </a>
-              <div className="flex mt-4 space-x-6">
-              {navigation.social.map((item) => (
                 <a
-                  key={item.name}
-                  href={item.href}
-                  className=""
+                  href="#"
+                  className="text-sm mt-4 text-center font-medium leading-6 px-6 py-3 rounded-full bg-gradient-to-r from-green-800 via-green-500 to-green-800 hover:from-green-900 hover:via-green-600 hover:to-green-900 text-white"
                 >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-12 w-12" aria-hidden="true" />
+                  Let&apos;s Connect
                 </a>
-              ))}
-                  </div>
+                <div className="flex mt-4 space-x-6">
+                  {navigation.social.map((item) => (
+                    <a key={item.name} href={item.href} className="">
+                      <span className="sr-only">{item.name}</span>
+                      <item.icon className="h-12 w-12" aria-hidden="true" />
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
           <div className="relative h-80">
             <img
-              className="hidden md:block absolute left-0 top-0 w-[44rem] max-w-none"
+              className="hidden lg:block absolute mt-8 lg:mt-0 left-0 top-0 w-[48rem] max-w-none"
               src="/images/cta-image.png"
               alt="App screenshot"
               width={1824}
               height={1080}
             />
             <img
-              className="md:hidden absolute left-0 top-0 w-auto mt-8"
+              className="lg:hidden absolute left-0 top-0 w-full mt-8"
               src="/images/cta-mobile-image.png"
               alt="App screenshot"
               width={1824}
