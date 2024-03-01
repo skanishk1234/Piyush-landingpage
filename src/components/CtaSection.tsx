@@ -37,7 +37,7 @@ const navigation = {
     },
     {
       name: "Telegram",
-      href: "https://t.me/TurtlePapaOfficialChat",
+      href: "https://t.me/TurtlePapaOfficial",
       icon: (props: any) => (
         <svg
           width={48}
